@@ -1,0 +1,113 @@
+
+ALSI1B8S0019@HQ--C-A2659 MINGW64 ~
+$ cd ../
+
+ALSI1B8S0019@HQ--C-A2659 MINGW64 /c/Users
+$ cd ALSI1B8S0019
+
+ALSI1B8S0019@HQ--C-A2659 MINGW64 ~
+$ mkdir test
+
+ALSI1B8S0019@HQ--C-A2659 MINGW64 ~
+$ cd test
+
+ALSI1B8S0019@HQ--C-A2659 MINGW64 ~/test
+$ echo #test > readme.md
+
+
+ALSI1B8S0019@HQ--C-A2659 MINGW64 ~/test
+$ git init
+Initialized empty Git repository in C:/Users/ALSI1B8S0019/test/.git/
+
+ALSI1B8S0019@HQ--C-A2659 MINGW64 ~/test (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+ALSI1B8S0019@HQ--C-A2659 MINGW64 ~/test (master)
+$ git add readme.md
+fatal: pathspec 'readme.md' did not match any files
+
+ALSI1B8S0019@HQ--C-A2659 MINGW64 ~/test (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+ALSI1B8S0019@HQ--C-A2659 MINGW64 ~/test (master)
+$ echo #test > readme.md
+
+
+ALSI1B8S0019@HQ--C-A2659 MINGW64 ~/test (master)
+$ git commit -m "add readme.md"
+On branch master
+
+Initial commit
+
+nothing to commit
+
+ALSI1B8S0019@HQ--C-A2659 MINGW64 ~/test (master)
+$ #test > readme.md
+
+ALSI1B8S0019@HQ--C-A2659 MINGW64 ~/test (master)
+$ test > readme.md
+
+ALSI1B8S0019@HQ--C-A2659 MINGW64 ~/test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        readme.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ALSI1B8S0019@HQ--C-A2659 MINGW64 ~/test (master)
+$ git add readme.md
+
+ALSI1B8S0019@HQ--C-A2659 MINGW64 ~/test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   readme.md
+
+
+ALSI1B8S0019@HQ--C-A2659 MINGW64 ~/test (master)
+$ git commit -m "add readme.md"
+[master (root-commit) c05be12] add readme.md
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 readme.md
+
+ALSI1B8S0019@HQ--C-A2659 MINGW64 ~/test (master)
+$ git remote add origin https://github.com/maishigeta/command.git
+
+ALSI1B8S0019@HQ--C-A2659 MINGW64 ~/test (master)
+$ git remote -v
+origin  https://github.com/maishigeta/command.git (fetch)
+origin  https://github.com/maishigeta/command.git (push)
+
+ALSI1B8S0019@HQ--C-A2659 MINGW64 ~/test (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 216 bytes | 43.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/maishigeta/command.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+ALSI1B8S0019@HQ--C-A2659 MINGW64 ~/test (master)
+$
